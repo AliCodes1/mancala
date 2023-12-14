@@ -1,0 +1,269 @@
+package ui;
+
+import javax.swing.*;
+import java.awt.*;
+import java.io.IOException;
+import mancala.*;
+import java.awt.event.ActionEvent;
+import java.util.List;
+
+public class MancalaGUI {
+    private JFrame frame;
+    private JPanel gamePanel;
+    private JLabel statusLabel;
+    private JLabel playerOneStatsLabel;
+    private JLabel playerTwoStatsLabel;
+
+    private MancalaGame game;
+    private final int PIT_COUNT = 12;
+
+    public MancalaGUI() {
+        game = new MancalaGame();
+        initializePlayers();
+        createAndShowGUI();
+    }
+    
+
+    private void createAndShowGUI() {
+        frame = new JFrame("Mancala Game");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setLayout(new BorderLayout());
+    
+        gamePanel = new JPanel(new GridLayout(2, 6));
+        initializeGamePanel();
+    
+        // Initialize the player stats labels
+        playerOneStatsLabel = new JLabel("Player 1 Stats");
+        playerTwoStatsLabel = new JLabel("Player 2 Stats");
+    
+        // Create a panel to hold the stats labels
+        JPanel statsPanel = new JPanel();
+        statsPanel.setLayout(new GridLayout(2, 1)); // Or any other suitable layout
+        statsPanel.add(playerTwoStatsLabel);
+        statsPanel.add(playerOneStatsLabel);
+    
+        // Add the stats panel to the frame
+        frame.add(statsPanel, BorderLayout.EAST); // You can change the layout position as needed
+    
+        statusLabel = new JLabel("Welcome to Mancala!");
+        frame.add(statusLabel, BorderLayout.SOUTH);
+    
+        frame.setJMenuBar(createMenuBar());
+    
+        frame.pack();
+        frame.setVisible(true);
+        frame.setLocationRelativeTo(null); 
+    }
+    
+
+    private void initializeGamePanel() {
+        gamePanel.setLayout(new GridLayout(2, 8)); 
+    
+        JLabel storePlayer2 = new JLabel("Store P2", SwingConstants.CENTER);
+        gamePanel.add(storePlayer2);
+    
+        for (int i = 11; i >= 6; i--) {
+            JButton pitButton = new JButton("Pit " + (i + 1));
+            int pitNumber = i + 1;
+            pitButton.addActionListener(e -> makeMove(pitNumber));
+            gamePanel.add(pitButton);
+        }
+    
+        JLabel storePlayer1 = new JLabel("Store P1", SwingConstants.CENTER);
+        gamePanel.add(storePlayer1);
+    
+        for (int i = 0; i < 6; i++) {
+            JButton pitButton = new JButton("Pit " + (i + 1));
+            int pitNumber = i + 1;
+            pitButton.addActionListener(e -> makeMove(pitNumber));
+            gamePanel.add(pitButton);
+        }
+        
+        frame.add(gamePanel, BorderLayout.CENTER);
+    }
+    private void updateGamePanel() {
+        JLabel storePlayer2Label = (JLabel) gamePanel.getComponent(0);
+        storePlayer2Label.setText("Store P2: " + game.getStoreCount(game.getPlayer(1)));
+    
+        JLabel storePlayer1Label = (JLabel) gamePanel.getComponent(7);
+        storePlayer1Label.setText("Store P1: " + game.getStoreCount(game.getPlayer(0)));
+    
+        for (int i = 11; i >= 6; i--) {
+            JButton pitButton = (JButton) gamePanel.getComponent(12 - i);
+            int stones = game.getNumStones(i + 1);
+            pitButton.setText("Pit " + (i + 1) + ": " + stones);
+        }
+    
+        for (int i = 0; i < 6; i++) {
+            JButton pitButton = (JButton) gamePanel.getComponent(i + 8);
+            int stones = game.getNumStones(i + 1);
+            pitButton.setText("Pit " + (i + 1) + ": " + stones);
+        }
+    }
+    
+    
+    
+
+    private JMenuBar createMenuBar() {
+        JMenuBar menuBar = new JMenuBar();
+        menuBar.setForeground(Color.WHITE); 
+        menuBar.setBackground(Color.BLACK);
+        JMenu fileMenu = new JMenu("File");
+        JMenuItem newGameItem = new JMenuItem("New Game");
+        newGameItem.addActionListener(e -> startNewGame());
+        JMenuItem saveGameItem = new JMenuItem("Save Game");
+        saveGameItem.addActionListener(e -> saveGame());
+        JMenuItem loadGameItem = new JMenuItem("Load Game");
+        loadGameItem.addActionListener(e -> loadGame());
+        JMenuItem exitItem = new JMenuItem("Exit");
+        exitItem.addActionListener(e -> System.exit(0));
+        fileMenu.add(newGameItem);
+        fileMenu.add(saveGameItem);
+        fileMenu.add(loadGameItem);
+        fileMenu.add(exitItem);
+
+        JMenu gameMenu = new JMenu("Game");
+        JMenuItem kalahItem = new JMenuItem("Switch to Kalah");
+        kalahItem.addActionListener(this::switchToKalah);
+        JMenuItem ayoItem = new JMenuItem("Switch to Ayo");
+        ayoItem.addActionListener(this::switchToAyo);
+        gameMenu.add(kalahItem);
+        gameMenu.add(ayoItem);
+
+        menuBar.add(fileMenu);
+        menuBar.add(gameMenu);
+
+        return menuBar;
+    }
+
+    private void startNewGame() {
+        game.startNewGame();
+        updateStatusLabel("New Game Started");
+        updateGamePanel();
+    }
+
+    private void showEndGameOptions() {
+        String[] options = {"Play Again", "Return to Main Screen"};
+        
+        int choice = JOptionPane.showOptionDialog(frame, 
+            "Game Over. What would you like to do?", 
+            "Game Over", 
+            JOptionPane.YES_NO_OPTION, 
+            JOptionPane.QUESTION_MESSAGE, 
+            null, options, options[0]);
+    
+        if (choice == JOptionPane.YES_OPTION) {
+            // User chose to play again
+            startNewGame();
+        } else {
+            // User chose to return to the main screen
+        }
+    }
+    
+
+    private void makeMove(int pitNumber) {
+        try {
+            if (game.isValidMove(pitNumber, game.getCurrentPlayer())) {
+                game.move(pitNumber);
+                updateGamePanel();
+                if (game.isGameOver()) {
+                    announceWinner();
+                } else {
+                    updateStatusLabel(game.getCurrentPlayer().getName() + "'s turn");
+                }
+            } else {
+                updateStatusLabel("Invalid move. Try again.");
+            }
+        } catch (InvalidMoveException e) {
+            updateStatusLabel("Error: " + e.getMessage());
+        }
+    }
+    
+
+    private void announceWinner() {
+        try {
+            Player winner = game.getWinner();
+            String message = (winner != null) ? winner.getName() + " wins!" : "It's a draw!";
+            JOptionPane.showMessageDialog(frame, message);
+            showEndGameOptions();
+            onGameEnd(winner);
+
+        } catch (GameNotOverException ignored) {
+        }
+    }
+    
+
+    private void updateStatusLabel(String message) {
+        statusLabel.setText(message);
+    }
+
+    private void saveGame() {
+        String filename = "mancala_game_save.dat";
+
+        try {
+            Saver.saveObject(game, filename);
+            updateStatusLabel("Game saved successfully in the assets folder.");
+        } catch (IOException e) {
+            updateStatusLabel("Failed to save the game: " + e.getMessage());
+        }
+    }
+
+
+    private void initializePlayers() {
+        UserProfile playerOneProfile = new UserProfile("Player 1");
+        UserProfile playerTwoProfile = new UserProfile("Player 2");
+        Player playerOne = new Player(playerOneProfile);
+        Player playerTwo = new Player(playerTwoProfile);
+        game.setPlayers(playerOne, playerTwo);
+        game.setCurrentPlayer(playerOne);
+
+
+    }
+    
+    private void onGameEnd(Player player) {
+        game.updatePlayerStats(player,game.getBoard()); 
+        updateGUIPlayerStats();
+
+    }
+
+    private void updateGUIPlayerStats() {
+        List<Player> players = game.getPlayers();
+    
+        playerOneStatsLabel.setText(players.get(0).getName() +"\n" +" - Kalah Played: " 
+            + players.get(0).getKalahGamesPlayed() +"\n" +" Wins: " + players.get(0).getKalahWins()
+            + "\n"+" Ayo Played: " + players.get(0).getAyoGamesPlayed() +"\n" +" Wins: " + players.get(0).getAyoWins());
+    
+        playerTwoStatsLabel.setText(players.get(1).getName() +"\n"+ " - Kalah Played: " 
+            + players.get(1).getKalahGamesPlayed() +"\n" +" Wins: " + players.get(1).getKalahWins()
+            +"\n"+ " Ayo Played: " + players.get(1).getAyoGamesPlayed() + "\n"+" Wins: " + players.get(1).getAyoWins());
+    }
+    
+    
+    
+    private void loadGame() {
+        JFileChooser fileChooser = new JFileChooser();
+        if (fileChooser.showOpenDialog(frame) == JFileChooser.APPROVE_OPTION) {
+            try {
+                game = (MancalaGame) Saver.loadObject(fileChooser.getSelectedFile().getAbsolutePath());
+                updateStatusLabel("Game loaded successfully.");
+                updateGamePanel();
+            } catch (IOException | ClassNotFoundException e) {
+                updateStatusLabel("Failed to load the game: " + e.getMessage());
+            }
+        }
+    }
+
+    private void switchToKalah(ActionEvent e) {
+        game.setBoard(new KalahRules());
+        startNewGame();
+    }
+
+    private void switchToAyo(ActionEvent e) {
+        game.setBoard(new AyoRules());
+        startNewGame();
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(MancalaGUI::new);
+    }
+}

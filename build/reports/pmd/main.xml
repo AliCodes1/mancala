@@ -1,0 +1,856 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.55.0" timestamp="2023-11-27T00:10:06.122">
+<file name="/Users/muhammadali/Desktop/Important/year-2/CIS2430/coursework/Assignments/GP4/src/main/java/mancala/AyoRules.java">
+<violation beginline="3" endline="91" begincolumn="8" endcolumn="1" rule="MissingSerialVersionUID" ruleset="Error Prone" package="mancala" class="AyoRules" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#missingserialversionuid" priority="3">
+Classes implementing Serializable should set a serialVersionUID
+</violation>
+<violation beginline="5" endline="5" begincolumn="34" endcolumn="37" rule="ImmutableField" ruleset="Design" package="mancala" class="AyoRules" variable="data" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Private field 'data' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="13" endline="13" begincolumn="41" endcolumn="53" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="AyoRules" method="moveStones" variable="playerNum" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'playerNum' is not assigned and could be declared final
+</violation>
+<violation beginline="13" endline="13" begincolumn="27" endcolumn="38" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="AyoRules" method="moveStones" variable="startPit" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'startPit' is not assigned and could be declared final
+</violation>
+<violation beginline="18" endline="18" begincolumn="9" endcolumn="63" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="mancala" class="AyoRules" method="moveStones" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'currentStoreCount' could be declared final
+</violation>
+<violation beginline="19" endline="19" begincolumn="9" endcolumn="58" rule="PrematureDeclaration" ruleset="Code Style" package="mancala" class="AyoRules" method="moveStones" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#prematuredeclaration" priority="3">
+Avoid declaring a variable if it is unreferenced before a possible exit point.
+</violation>
+<violation beginline="19" endline="19" begincolumn="13" endcolumn="29" rule="UnusedLocalVariable" ruleset="Best Practices" package="mancala" class="AyoRules" method="moveStones" variable="stonesDistributed" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
+Avoid unused local variables such as 'stonesDistributed'.
+</violation>
+<violation beginline="19" endline="21" begincolumn="13" endcolumn="58" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="mancala" class="AyoRules" method="moveStones" variable="stonesDistributed" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'stonesDistributed' (lines '19'-'21').
+</violation>
+<violation beginline="19" endline="19" begincolumn="9" endcolumn="58" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="mancala" class="AyoRules" method="moveStones" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'stonesDistributed' could be declared final
+</violation>
+<violation beginline="24" endline="24" begincolumn="33" endcolumn="44" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="AyoRules" method="distributeStones" variable="startPit" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'startPit' is not assigned and could be declared final
+</violation>
+<violation beginline="24" endline="63" begincolumn="12" endcolumn="5" rule="CyclomaticComplexity" ruleset="Design" package="mancala" class="AyoRules" method="distributeStones" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'distributeStones(int)' has a cyclomatic complexity of 10.
+</violation>
+<violation beginline="25" endline="25" begincolumn="13" endcolumn="30" rule="LongVariable" ruleset="Code Style" package="mancala" class="AyoRules" method="distributeStones" variable="stonesToDistribute" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like stonesToDistribute
+</violation>
+<violation beginline="27" endline="27" begincolumn="17" endcolumn="36" rule="LongVariable" ruleset="Code Style" package="mancala" class="AyoRules" method="distributeStones" variable="continueDistribution" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like continueDistribution
+</violation>
+<violation beginline="28" endline="35" begincolumn="17" endcolumn="44" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="mancala" class="AyoRules" method="distributeStones" variable="nextPitOrStore" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'nextPitOrStore' (lines '28'-'35').
+</violation>
+<violation beginline="29" endline="46" begincolumn="17" endcolumn="35" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="mancala" class="AyoRules" method="distributeStones" variable="stonesDistributed" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'stonesDistributed' (lines '29'-'46').
+</violation>
+<violation beginline="32" endline="53" begincolumn="17" endcolumn="43" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="mancala" class="AyoRules" method="distributeStones" variable="continueDistribution" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'continueDistribution' (lines '32'-'53').
+</violation>
+<violation beginline="38" endline="38" begincolumn="21" endcolumn="56" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="mancala" class="AyoRules" method="distributeStones" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'store' could be declared final
+</violation>
+<violation beginline="39" endline="39" begincolumn="21" endcolumn="36" rule="LawOfDemeter" ruleset="Design" package="mancala" class="AyoRules" method="distributeStones" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="42" endline="42" begincolumn="35" endcolumn="49" rule="UselessParentheses" ruleset="Code Style" package="mancala" class="AyoRules" method="distributeStones" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="46" endline="46" begincolumn="17" endcolumn="35" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="mancala" class="AyoRules" method="distributeStones" variable="stonesDistributed" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'stonesDistributed' (lines '46'-'46').
+</violation>
+<violation beginline="52" endline="63" begincolumn="17" endcolumn="66" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="mancala" class="AyoRules" method="distributeStones" variable="stonesToDistribute" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'stonesToDistribute' (lines '52'-'63').
+</violation>
+<violation beginline="58" endline="58" begincolumn="87" endcolumn="116" rule="LawOfDemeter" ruleset="Design" package="mancala" class="AyoRules" method="distributeStones" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="65" endline="65" begincolumn="17" endcolumn="58" rule="UnusedPrivateMethod" ruleset="Best Practices" package="mancala" class="AyoRules" method="calculateNextPitIndex" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#unusedprivatemethod" priority="3">
+Avoid unused private methods such as 'calculateNextPitIndex(int)'.
+</violation>
+<violation beginline="67" endline="67" begincolumn="9" endcolumn="23" rule="AvoidReassigningParameters" ruleset="Best Practices" package="mancala" class="AyoRules" method="calculateNextPitIndex" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#avoidreassigningparameters" priority="2">
+Avoid reassigning parameters such as 'currentPitIndex'
+</violation>
+<violation beginline="68" endline="68" begincolumn="31" endcolumn="32" rule="AvoidLiteralsInIfCondition" ruleset="Error Prone" package="mancala" class="AyoRules" method="calculateNextPitIndex" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#avoidliteralsinifcondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="75" endline="75" begincolumn="30" endcolumn="40" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="AyoRules" method="captureStones" variable="lastPit" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'lastPit' is not assigned and could be declared final
+</violation>
+<violation beginline="76" endline="76" begincolumn="9" endcolumn="38" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="mancala" class="AyoRules" method="captureStones" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'oppositePit' could be declared final
+</violation>
+<violation beginline="78" endline="78" begincolumn="13" endcolumn="63" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="mancala" class="AyoRules" method="captureStones" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'capturedStones' could be declared final
+</violation>
+<violation beginline="82" endline="82" begincolumn="13" endcolumn="34" rule="OnlyOneReturn" ruleset="Code Style" package="mancala" class="AyoRules" method="captureStones" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="87" endline="87" begincolumn="39" endcolumn="45" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="AyoRules" method="isPitOnPlayerSide" variable="pit" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'pit' is not assigned and could be declared final
+</violation>
+<violation beginline="87" endline="87" begincolumn="48" endcolumn="60" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="AyoRules" method="isPitOnPlayerSide" variable="playerNum" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'playerNum' is not assigned and could be declared final
+</violation>
+<violation beginline="89" endline="89" begincolumn="17" endcolumn="54" rule="UselessParentheses" ruleset="Code Style" package="mancala" class="AyoRules" method="isPitOnPlayerSide" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="89" endline="89" begincolumn="61" endcolumn="99" rule="UselessParentheses" ruleset="Code Style" package="mancala" class="AyoRules" method="isPitOnPlayerSide" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+</file>
+<file name="/Users/muhammadali/Desktop/Important/year-2/CIS2430/coursework/Assignments/GP4/src/main/java/mancala/GameNotOverException.java">
+<violation beginline="3" endline="7" begincolumn="8" endcolumn="1" rule="MissingSerialVersionUID" ruleset="Error Prone" package="mancala" class="GameNotOverException" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#missingserialversionuid" priority="3">
+Classes implementing Serializable should set a serialVersionUID
+</violation>
+</file>
+<file name="/Users/muhammadali/Desktop/Important/year-2/CIS2430/coursework/Assignments/GP4/src/main/java/mancala/GameRules.java">
+<violation beginline="9" endline="168" begincolumn="17" endcolumn="1" rule="AbstractNaming" ruleset="Code Style" package="mancala" class="GameRules" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#abstractnaming" priority="3">
+Abstract classes should be named AbstractXXX
+</violation>
+<violation beginline="12" endline="12" begincolumn="34" endcolumn="42" rule="ImmutableField" ruleset="Design" package="mancala" class="GameRules" variable="gameBoard" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Private field 'gameBoard' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="13" endline="13" begincolumn="17" endcolumn="29" rule="UnusedPrivateField" ruleset="Best Practices" package="mancala" class="GameRules" variable="currentPlayer" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'currentPlayer'.
+</violation>
+<violation beginline="13" endline="13" begincolumn="13" endcolumn="34" rule="SingularField" ruleset="Design" package="mancala" class="GameRules" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#singularfield" priority="3">
+Perhaps 'currentPlayer' could be replaced by a local variable.
+</violation>
+<violation beginline="22" endline="22" begincolumn="33" endcolumn="39" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="GameRules" method="getCurrentPlayer" variable="pit" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'pit' is not assigned and could be declared final
+</violation>
+<violation beginline="24" endline="24" begincolumn="13" endcolumn="21" rule="OnlyOneReturn" ruleset="Code Style" package="mancala" class="GameRules" method="getCurrentPlayer" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="35" endline="35" begincolumn="29" endcolumn="38" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="GameRules" method="getNumStones" variable="pitNum" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'pitNum' is not assigned and could be declared final
+</violation>
+<violation beginline="44" endline="46" begincolumn="5" endcolumn="5" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="mancala" class="GameRules" method="getDataStructure" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
+To avoid mistakes add a comment at the beginning of the getDataStructure method if you want a default access modifier
+</violation>
+<violation beginline="44" endline="46" begincolumn="5" endcolumn="5" rule="DefaultPackage" ruleset="Code Style" package="mancala" class="GameRules" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="54" endline="54" begincolumn="25" endcolumn="34" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="GameRules" method="isSideEmpty" variable="pitNum" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'pitNum' is not assigned and could be declared final
+</violation>
+<violation beginline="54" endline="73" begincolumn="5" endcolumn="5" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="mancala" class="GameRules" method="isSideEmpty" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
+To avoid mistakes add a comment at the beginning of the isSideEmpty method if you want a default access modifier
+</violation>
+<violation beginline="54" endline="73" begincolumn="5" endcolumn="5" rule="DefaultPackage" ruleset="Code Style" package="mancala" class="GameRules" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="68" endline="68" begincolumn="17" endcolumn="29" rule="OnlyOneReturn" ruleset="Code Style" package="mancala" class="GameRules" method="isSideEmpty" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="80" endline="80" begincolumn="27" endcolumn="39" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="GameRules" method="setPlayer" variable="playerNum" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'playerNum' is not assigned and could be declared final
+</violation>
+<violation beginline="100" endline="100" begincolumn="14" endcolumn="48" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="mancala" class="GameRules" method="distributeStones" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
+To avoid mistakes add a comment at the beginning of the distributeStones method if you want a default access modifier
+</violation>
+<violation beginline="100" endline="100" begincolumn="5" endcolumn="48" rule="DefaultPackage" ruleset="Code Style" package="mancala" class="GameRules" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="108" endline="108" begincolumn="14" endcolumn="50" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="mancala" class="GameRules" method="captureStones" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
+To avoid mistakes add a comment at the beginning of the captureStones method if you want a default access modifier
+</violation>
+<violation beginline="108" endline="108" begincolumn="5" endcolumn="50" rule="DefaultPackage" ruleset="Code Style" package="mancala" class="GameRules" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="116" endline="116" begincolumn="33" endcolumn="42" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="GameRules" method="registerPlayers" variable="one" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'one' is not assigned and could be declared final
+</violation>
+<violation beginline="116" endline="116" begincolumn="45" endcolumn="54" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="GameRules" method="registerPlayers" variable="two" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'two' is not assigned and could be declared final
+</violation>
+<violation beginline="118" endline="118" begincolumn="9" endcolumn="36" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="mancala" class="GameRules" method="registerPlayers" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'storeOne' could be declared final
+</violation>
+<violation beginline="119" endline="119" begincolumn="9" endcolumn="36" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="mancala" class="GameRules" method="registerPlayers" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'storeTwo' could be declared final
+</violation>
+<violation beginline="142" endline="142" begincolumn="17" endcolumn="29" rule="UnusedLocalVariable" ruleset="Best Practices" package="mancala" class="GameRules" method="removeStones" variable="stonesRemoved" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
+Avoid unused local variables such as 'stonesRemoved'.
+</violation>
+<violation beginline="142" endline="142" begincolumn="17" endcolumn="55" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="mancala" class="GameRules" method="removeStones" variable="stonesRemoved" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'stonesRemoved' (lines '142'-'142').
+</violation>
+<violation beginline="142" endline="145" begincolumn="17" endcolumn="55" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="mancala" class="GameRules" method="removeStones" variable="stonesRemoved" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'stonesRemoved' (lines '142'-'145').
+</violation>
+<violation beginline="142" endline="142" begincolumn="13" endcolumn="55" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="mancala" class="GameRules" method="removeStones" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'stonesRemoved' could be declared final
+</violation>
+<violation beginline="149" endline="149" begincolumn="9" endcolumn="51" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="mancala" class="GameRules" method="toString" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'builder' could be declared final
+</violation>
+</file>
+<file name="/Users/muhammadali/Desktop/Important/year-2/CIS2430/coursework/Assignments/GP4/src/main/java/mancala/InvalidMoveException.java">
+<violation beginline="3" endline="8" begincolumn="8" endcolumn="1" rule="MissingSerialVersionUID" ruleset="Error Prone" package="mancala" class="InvalidMoveException" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#missingserialversionuid" priority="3">
+Classes implementing Serializable should set a serialVersionUID
+</violation>
+</file>
+<file name="/Users/muhammadali/Desktop/Important/year-2/CIS2430/coursework/Assignments/GP4/src/main/java/mancala/KalahRules.java">
+<violation beginline="3" endline="66" begincolumn="8" endcolumn="1" rule="MissingSerialVersionUID" ruleset="Error Prone" package="mancala" class="KalahRules" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#missingserialversionuid" priority="3">
+Classes implementing Serializable should set a serialVersionUID
+</violation>
+<violation beginline="5" endline="5" begincolumn="5" endcolumn="49" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="mancala" class="KalahRules" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
+To avoid mistakes add a comment at the beginning of the data field if you want a default access modifier
+</violation>
+<violation beginline="5" endline="5" begincolumn="5" endcolumn="49" rule="DefaultPackage" ruleset="Code Style" package="mancala" class="KalahRules" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="17" endline="17" begincolumn="15" endcolumn="64" rule="PrematureDeclaration" ruleset="Code Style" package="mancala" class="KalahRules" method="moveStones" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#prematuredeclaration" priority="3">
+Avoid declaring a variable if it is unreferenced before a possible exit point.
+</violation>
+<violation beginline="17" endline="17" begincolumn="19" endcolumn="35" rule="UnusedLocalVariable" ruleset="Best Practices" package="mancala" class="KalahRules" method="moveStones" variable="stonesDistributed" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
+Avoid unused local variables such as 'stonesDistributed'.
+</violation>
+<violation beginline="17" endline="19" begincolumn="19" endcolumn="64" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="mancala" class="KalahRules" method="moveStones" variable="stonesDistributed" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'stonesDistributed' (lines '17'-'19').
+</violation>
+<violation beginline="23" endline="23" begincolumn="13" endcolumn="30" rule="LongVariable" ruleset="Code Style" package="mancala" class="KalahRules" method="distributeStones" variable="stonesToDistribute" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like stonesToDistribute
+</violation>
+<violation beginline="25" endline="40" begincolumn="13" endcolumn="31" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="mancala" class="KalahRules" method="distributeStones" variable="stonesDistributed" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'stonesDistributed' (lines '25'-'40').
+</violation>
+<violation beginline="33" endline="33" begincolumn="17" endcolumn="32" rule="LawOfDemeter" ruleset="Design" package="mancala" class="KalahRules" method="distributeStones" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="36" endline="36" begincolumn="31" endcolumn="45" rule="UselessParentheses" ruleset="Code Style" package="mancala" class="KalahRules" method="distributeStones" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="37" endline="37" begincolumn="17" endcolumn="41" rule="LawOfDemeter" ruleset="Design" package="mancala" class="KalahRules" method="distributeStones" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="40" endline="40" begincolumn="13" endcolumn="31" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="mancala" class="KalahRules" method="distributeStones" variable="stonesDistributed" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'stonesDistributed' (lines '40'-'40').
+</violation>
+<violation beginline="55" endline="55" begincolumn="41" endcolumn="64" rule="UselessParentheses" ruleset="Code Style" package="mancala" class="KalahRules" method="captureStones" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="60" endline="60" begincolumn="26" endcolumn="26" rule="AvoidLiteralsInIfCondition" ruleset="Error Prone" package="mancala" class="KalahRules" method="isPitOnPlayerSide" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#avoidliteralsinifcondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="61" endline="61" begincolumn="13" endcolumn="40" rule="OnlyOneReturn" ruleset="Code Style" package="mancala" class="KalahRules" method="isPitOnPlayerSide" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+</file>
+<file name="/Users/muhammadali/Desktop/Important/year-2/CIS2430/coursework/Assignments/GP4/src/main/java/mancala/MancalaDataStructure.java">
+<violation beginline="13" endline="264" begincolumn="59" endcolumn="1" rule="TooManyMethods" ruleset="Design" package="mancala" class="MancalaDataStructure" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#toomanymethods" priority="3">
+This class has too many methods, consider refactoring it.
+</violation>
+<violation beginline="15" endline="15" begincolumn="23" endcolumn="32" rule="FieldNamingConventions" ruleset="Code Style" package="mancala" class="MancalaDataStructure" variable="PLAYER_ONE" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The final field name 'PLAYER_ONE' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="15" endline="15" begincolumn="23" endcolumn="32" rule="FinalFieldCouldBeStatic" ruleset="Design" package="mancala" class="MancalaDataStructure" variable="PLAYER_ONE" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#finalfieldcouldbestatic" priority="3">
+This final field could be made static
+</violation>
+<violation beginline="16" endline="16" begincolumn="23" endcolumn="32" rule="FieldNamingConventions" ruleset="Code Style" package="mancala" class="MancalaDataStructure" variable="PLAYER_TWO" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The final field name 'PLAYER_TWO' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="16" endline="16" begincolumn="23" endcolumn="32" rule="FinalFieldCouldBeStatic" ruleset="Design" package="mancala" class="MancalaDataStructure" variable="PLAYER_TWO" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#finalfieldcouldbestatic" priority="3">
+This final field could be made static
+</violation>
+<violation beginline="17" endline="17" begincolumn="22" endcolumn="36" rule="FieldNamingConventions" ruleset="Code Style" package="mancala" class="MancalaDataStructure" variable="PITS_PER_PLAYER" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The final field name 'PITS_PER_PLAYER' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="17" endline="17" begincolumn="22" endcolumn="36" rule="FinalFieldCouldBeStatic" ruleset="Design" package="mancala" class="MancalaDataStructure" variable="PITS_PER_PLAYER" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#finalfieldcouldbestatic" priority="3">
+This final field could be made static
+</violation>
+<violation beginline="19" endline="19" begincolumn="18" endcolumn="29" rule="VariableNamingConventions" ruleset="Code Style" package="mancala" class="MancalaDataStructure" variable="START_STONES" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#variablenamingconventions" priority="1">
+Only variables that are final should contain underscores (except for underscores in standard prefix/suffix), 'START_STONES' is not final.
+</violation>
+<violation beginline="19" endline="19" begincolumn="18" endcolumn="29" rule="ImmutableField" ruleset="Design" package="mancala" class="MancalaDataStructure" variable="START_STONES" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Private field 'START_STONES' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="19" endline="19" begincolumn="18" endcolumn="29" rule="FieldNamingConventions" ruleset="Code Style" package="mancala" class="MancalaDataStructure" variable="START_STONES" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The field name 'START_STONES' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="19" endline="19" begincolumn="14" endcolumn="34" rule="SuspiciousConstantFieldName" ruleset="Code Style" package="mancala" class="MancalaDataStructure" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#suspiciousconstantfieldname" priority="3">
+The field name indicates a constant but its modifiers do not
+</violation>
+<violation beginline="19" endline="19" begincolumn="18" endcolumn="29" rule="VariableNamingConventions" ruleset="Code Style" package="mancala" class="MancalaDataStructure" variable="START_STONES" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#variablenamingconventions" priority="1">
+Variables should start with a lowercase character, 'START_STONES' starts with uppercase character.
+</violation>
+<violation beginline="21" endline="21" begincolumn="29" endcolumn="32" rule="ImmutableField" ruleset="Design" package="mancala" class="MancalaDataStructure" variable="data" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Private field 'data' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="32" endline="32" begincolumn="33" endcolumn="47" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="MancalaDataStructure" method="MancalaDataStructure" variable="startStones" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'startStones' is not assigned and could be declared final
+</violation>
+<violation beginline="44" endline="44" begincolumn="28" endcolumn="34" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="MancalaDataStructure" method="isStore" variable="pit" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'pit' is not assigned and could be declared final
+</violation>
+<violation beginline="63" endline="63" begincolumn="38" endcolumn="49" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="MancalaDataStructure" method="addStones" variable="numToAdd" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'numToAdd' is not assigned and could be declared final
+</violation>
+<violation beginline="63" endline="63" begincolumn="26" endcolumn="35" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="MancalaDataStructure" method="addStones" variable="pitNum" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'pitNum' is not assigned and could be declared final
+</violation>
+<violation beginline="64" endline="64" begincolumn="9" endcolumn="48" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="mancala" class="MancalaDataStructure" method="addStones" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'pit' could be declared final
+</violation>
+<violation beginline="65" endline="65" begincolumn="9" endcolumn="31" rule="LawOfDemeter" ruleset="Design" package="mancala" class="MancalaDataStructure" method="addStones" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="66" endline="66" begincolumn="16" endcolumn="34" rule="LawOfDemeter" ruleset="Design" package="mancala" class="MancalaDataStructure" method="addStones" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="69" endline="69" begincolumn="32" endcolumn="45" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="MancalaDataStructure" method="getNextPitIndex" variable="currentPit" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'currentPit' is not assigned and could be declared final
+</violation>
+<violation beginline="69" endline="69" begincolumn="48" endcolumn="64" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="MancalaDataStructure" method="getNextPitIndex" variable="currentPlayer" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'currentPlayer' is not assigned and could be declared final
+</violation>
+<violation beginline="72" endline="72" begincolumn="23" endcolumn="24" rule="AvoidLiteralsInIfCondition" ruleset="Error Prone" package="mancala" class="MancalaDataStructure" method="getNextPitIndex" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#avoidliteralsinifcondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="78" endline="78" begincolumn="27" endcolumn="28" rule="AvoidLiteralsInIfCondition" ruleset="Error Prone" package="mancala" class="MancalaDataStructure" method="getNextPitIndex" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#avoidliteralsinifcondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="92" endline="92" begincolumn="29" endcolumn="38" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="MancalaDataStructure" method="removeStones" variable="pitNum" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'pitNum' is not assigned and could be declared final
+</violation>
+<violation beginline="93" endline="93" begincolumn="9" endcolumn="48" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="mancala" class="MancalaDataStructure" method="removeStones" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'pit' could be declared final
+</violation>
+<violation beginline="94" endline="94" begincolumn="16" endcolumn="33" rule="LawOfDemeter" ruleset="Design" package="mancala" class="MancalaDataStructure" method="removeStones" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="104" endline="104" begincolumn="42" endcolumn="53" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="MancalaDataStructure" method="addToStore" variable="numToAdd" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'numToAdd' is not assigned and could be declared final
+</violation>
+<violation beginline="104" endline="104" begincolumn="27" endcolumn="39" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="MancalaDataStructure" method="addToStore" variable="playerNum" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'playerNum' is not assigned and could be declared final
+</violation>
+<violation beginline="105" endline="105" begincolumn="9" endcolumn="55" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="mancala" class="MancalaDataStructure" method="addToStore" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'store' could be declared final
+</violation>
+<violation beginline="106" endline="106" begincolumn="9" endcolumn="33" rule="LawOfDemeter" ruleset="Design" package="mancala" class="MancalaDataStructure" method="addToStore" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="107" endline="107" begincolumn="16" endcolumn="36" rule="LawOfDemeter" ruleset="Design" package="mancala" class="MancalaDataStructure" method="addToStore" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="116" endline="116" begincolumn="30" endcolumn="42" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="MancalaDataStructure" method="getStoreCount" variable="playerNum" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'playerNum' is not assigned and could be declared final
+</violation>
+<violation beginline="117" endline="117" begincolumn="9" endcolumn="55" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="mancala" class="MancalaDataStructure" method="getStoreCount" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'store' could be declared final
+</violation>
+<violation beginline="118" endline="118" begincolumn="16" endcolumn="36" rule="LawOfDemeter" ruleset="Design" package="mancala" class="MancalaDataStructure" method="getStoreCount" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="127" endline="127" begincolumn="29" endcolumn="38" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="MancalaDataStructure" method="getNumStones" variable="pitNum" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'pitNum' is not assigned and could be declared final
+</violation>
+<violation beginline="128" endline="128" begincolumn="9" endcolumn="48" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="mancala" class="MancalaDataStructure" method="getNumStones" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'pit' could be declared final
+</violation>
+<violation beginline="129" endline="129" begincolumn="16" endcolumn="34" rule="LawOfDemeter" ruleset="Design" package="mancala" class="MancalaDataStructure" method="getNumStones" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="133" endline="133" begincolumn="24" endcolumn="33" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="MancalaDataStructure" method="pitPos" variable="pitNum" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'pitNum' is not assigned and could be declared final
+</violation>
+<violation beginline="138" endline="138" begincolumn="23" endcolumn="38" rule="AvoidThrowingRawExceptionTypes" ruleset="Design" package="mancala" class="MancalaDataStructure" method="pitPos" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#avoidthrowingrawexceptiontypes" priority="1">
+Avoid throwing raw exception types.
+</violation>
+<violation beginline="148" endline="148" begincolumn="26" endcolumn="38" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="MancalaDataStructure" method="storePos" variable="playerNum" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'playerNum' is not assigned and could be declared final
+</violation>
+<violation beginline="150" endline="150" begincolumn="13" endcolumn="30" rule="SystemPrintln" ruleset="Best Practices" package="mancala" class="MancalaDataStructure" method="storePos" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+<violation beginline="151" endline="151" begincolumn="23" endcolumn="38" rule="AvoidThrowingRawExceptionTypes" ruleset="Design" package="mancala" class="MancalaDataStructure" method="storePos" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#avoidthrowingrawexceptiontypes" priority="1">
+Avoid throwing raw exception types.
+</violation>
+<violation beginline="154" endline="156" begincolumn="13" endcolumn="28" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="mancala" class="MancalaDataStructure" method="storePos" variable="pos" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'pos' (lines '154'-'156').
+</violation>
+<violation beginline="155" endline="155" begincolumn="26" endcolumn="26" rule="AvoidLiteralsInIfCondition" ruleset="Error Prone" package="mancala" class="MancalaDataStructure" method="storePos" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#avoidliteralsinifcondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="183" endline="183" begincolumn="13" endcolumn="47" rule="LawOfDemeter" ruleset="Design" package="mancala" class="MancalaDataStructure" method="setUpPits" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="187" endline="187" begincolumn="13" endcolumn="47" rule="LawOfDemeter" ruleset="Design" package="mancala" class="MancalaDataStructure" method="setUpPits" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="197" endline="197" begincolumn="27" endcolumn="39" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="MancalaDataStructure" method="getStore" variable="playerNum" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'playerNum' is not assigned and could be declared final
+</violation>
+<violation beginline="206" endline="206" begincolumn="43" endcolumn="55" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="MancalaDataStructure" method="setStore" variable="playerNum" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'playerNum' is not assigned and could be declared final
+</violation>
+<violation beginline="206" endline="206" begincolumn="26" endcolumn="40" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="MancalaDataStructure" method="setStore" variable="store" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'store' is not assigned and could be declared final
+</violation>
+<violation beginline="223" endline="223" begincolumn="32" endcolumn="44" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="MancalaDataStructure" method="setSkipPlayer" variable="playerNum" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'playerNum' is not assigned and could be declared final
+</violation>
+<violation beginline="226" endline="226" begincolumn="26" endcolumn="26" rule="AvoidLiteralsInIfCondition" ruleset="Error Prone" package="mancala" class="MancalaDataStructure" method="setSkipPlayer" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#avoidliteralsinifcondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="231" endline="231" begincolumn="29" endcolumn="38" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="MancalaDataStructure" method="setSkipPit" variable="pitNum" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'pitNum' is not assigned and could be declared final
+</violation>
+<violation beginline="242" endline="242" begincolumn="43" endcolumn="55" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="MancalaDataStructure" method="setIterator" variable="playerNum" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'playerNum' is not assigned and could be declared final
+</violation>
+<violation beginline="242" endline="242" begincolumn="58" endcolumn="77" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="MancalaDataStructure" method="setIterator" variable="skipStartPit" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'skipStartPit' is not assigned and could be declared final
+</violation>
+<violation beginline="242" endline="242" begincolumn="29" endcolumn="40" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="MancalaDataStructure" method="setIterator" variable="startPos" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'startPos' is not assigned and could be declared final
+</violation>
+</file>
+<file name="/Users/muhammadali/Desktop/Important/year-2/CIS2430/coursework/Assignments/GP4/src/main/java/mancala/MancalaGame.java">
+<violation beginline="7" endline="7" begincolumn="1" endcolumn="38" rule="UnnecessaryImport" ruleset="Code Style" package="mancala" class="MancalaGame" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+Unused import 'javax.swing.text.PlainDocument'
+</violation>
+<violation beginline="7" endline="7" begincolumn="1" endcolumn="38" rule="UnusedImports" ruleset="Best Practices" package="mancala" class="MancalaGame" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Unused import 'javax.swing.text.PlainDocument'
+</violation>
+<violation beginline="9" endline="280" begincolumn="50" endcolumn="1" rule="TooManyMethods" ruleset="Design" package="mancala" class="MancalaGame" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#toomanymethods" priority="3">
+This class has too many methods, consider refactoring it.
+</violation>
+<violation beginline="106" endline="106" begincolumn="16" endcolumn="48" rule="LawOfDemeter" ruleset="Design" package="mancala" class="MancalaGame" method="getStoreCount" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="119" endline="119" begincolumn="37" endcolumn="81" rule="LawOfDemeter" ruleset="Design" package="mancala" class="MancalaGame" method="getWinner" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="120" endline="120" begincolumn="37" endcolumn="81" rule="LawOfDemeter" ruleset="Design" package="mancala" class="MancalaGame" method="getWinner" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="122" endline="122" begincolumn="13" endcolumn="34" rule="OnlyOneReturn" ruleset="Code Style" package="mancala" class="MancalaGame" method="getWinner" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="124" endline="124" begincolumn="13" endcolumn="34" rule="OnlyOneReturn" ruleset="Code Style" package="mancala" class="MancalaGame" method="getWinner" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="135" endline="135" begincolumn="66" endcolumn="109" rule="LawOfDemeter" ruleset="Design" package="mancala" class="MancalaGame" method="isGameOver" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="146" endline="146" begincolumn="68" endcolumn="111" rule="LawOfDemeter" ruleset="Design" package="mancala" class="MancalaGame" method="isValidMove" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="147" endline="147" begincolumn="45" endcolumn="88" rule="LawOfDemeter" ruleset="Design" package="mancala" class="MancalaGame" method="isValidMove" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="158" endline="175" begincolumn="12" endcolumn="5" rule="CyclomaticComplexity" ruleset="Design" package="mancala" class="MancalaGame" method="move" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'move(int)' has a cyclomatic complexity of 10.
+</violation>
+<violation beginline="166" endline="166" begincolumn="16" endcolumn="63" rule="UselessParentheses" ruleset="Code Style" package="mancala" class="MancalaGame" method="move" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="166" endline="166" begincolumn="70" endcolumn="116" rule="UselessParentheses" ruleset="Code Style" package="mancala" class="MancalaGame" method="move" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="170" endline="170" begincolumn="63" endcolumn="106" rule="LawOfDemeter" ruleset="Design" package="mancala" class="MancalaGame" method="move" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="191" endline="191" begincolumn="50" endcolumn="93" rule="LawOfDemeter" ruleset="Design" package="mancala" class="MancalaGame" method="collectRemainingStones" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="192" endline="192" begincolumn="33" endcolumn="76" rule="LawOfDemeter" ruleset="Design" package="mancala" class="MancalaGame" method="collectRemainingStones" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="195" endline="195" begincolumn="28" endcolumn="73" rule="LawOfDemeter" ruleset="Design" package="mancala" class="MancalaGame" method="collectRemainingStones" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="197" endline="197" begincolumn="9" endcolumn="77" rule="LawOfDemeter" ruleset="Design" package="mancala" class="MancalaGame" method="collectRemainingStones" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="217" endline="217" begincolumn="16" endcolumn="44" rule="LawOfDemeter" ruleset="Design" package="mancala" class="MancalaGame" method="getPlayerNum" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="251" endline="251" begincolumn="9" endcolumn="73" rule="LawOfDemeter" ruleset="Design" package="mancala" class="MancalaGame" method="startNewGame" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="251" endline="251" begincolumn="33" endcolumn="72" rule="LawOfDemeter" ruleset="Design" package="mancala" class="MancalaGame" method="startNewGame" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="252" endline="252" begincolumn="9" endcolumn="73" rule="LawOfDemeter" ruleset="Design" package="mancala" class="MancalaGame" method="startNewGame" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="252" endline="252" begincolumn="33" endcolumn="72" rule="LawOfDemeter" ruleset="Design" package="mancala" class="MancalaGame" method="startNewGame" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+</file>
+<file name="/Users/muhammadali/Desktop/Important/year-2/CIS2430/coursework/Assignments/GP4/src/main/java/mancala/NoSuchPlayerException.java">
+<violation beginline="3" endline="7" begincolumn="8" endcolumn="1" rule="MissingSerialVersionUID" ruleset="Error Prone" package="mancala" class="NoSuchPlayerException" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#missingserialversionuid" priority="3">
+Classes implementing Serializable should set a serialVersionUID
+</violation>
+</file>
+<file name="/Users/muhammadali/Desktop/Important/year-2/CIS2430/coursework/Assignments/GP4/src/main/java/mancala/Pit.java">
+<violation beginline="5" endline="42" begincolumn="8" endcolumn="1" rule="ShortClassName" ruleset="Code Style" package="mancala" class="Pit" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#shortclassname" priority="4">
+Avoid short class names like Pit
+</violation>
+<violation beginline="13" endline="13" begincolumn="16" endcolumn="25" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="Pit" method="Pit" variable="stones" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'stones' is not assigned and could be declared final
+</violation>
+<violation beginline="20" endline="20" begincolumn="27" endcolumn="36" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="Pit" method="addStones" variable="stones" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'stones' is not assigned and could be declared final
+</violation>
+<violation beginline="38" endline="38" begincolumn="9" endcolumn="36" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="mancala" class="Pit" method="removeStones" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'stones' could be declared final
+</violation>
+</file>
+<file name="/Users/muhammadali/Desktop/Important/year-2/CIS2430/coursework/Assignments/GP4/src/main/java/mancala/PitNotFoundException.java">
+<violation beginline="3" endline="7" begincolumn="8" endcolumn="1" rule="MissingSerialVersionUID" ruleset="Error Prone" package="mancala" class="PitNotFoundException" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#missingserialversionuid" priority="3">
+Classes implementing Serializable should set a serialVersionUID
+</violation>
+<violation beginline="4" endline="4" begincolumn="33" endcolumn="46" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="PitNotFoundException" method="PitNotFoundException" variable="message" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'message' is not assigned and could be declared final
+</violation>
+</file>
+<file name="/Users/muhammadali/Desktop/Important/year-2/CIS2430/coursework/Assignments/GP4/src/main/java/mancala/Player.java">
+<violation beginline="13" endline="13" begincolumn="19" endcolumn="41" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="Player" method="Player" variable="userProfile" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'userProfile' is not assigned and could be declared final
+</violation>
+<violation beginline="22" endline="22" begincolumn="37" endcolumn="56" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="Player" method="setKalahGamesPlayed" variable="kalahGamesPlayed" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'kalahGamesPlayed' is not assigned and could be declared final
+</violation>
+<violation beginline="38" endline="38" begincolumn="35" endcolumn="52" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="Player" method="setAyoGamesPlayed" variable="ayoGamesPlayed" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ayoGamesPlayed' is not assigned and could be declared final
+</violation>
+<violation beginline="46" endline="46" begincolumn="30" endcolumn="42" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="Player" method="setKalahWins" variable="kalahWins" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'kalahWins' is not assigned and could be declared final
+</violation>
+<violation beginline="62" endline="62" begincolumn="28" endcolumn="38" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="Player" method="setAyoWins" variable="ayoWins" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ayoWins' is not assigned and could be declared final
+</violation>
+</file>
+<file name="/Users/muhammadali/Desktop/Important/year-2/CIS2430/coursework/Assignments/GP4/src/main/java/mancala/Saver.java">
+<violation beginline="7" endline="32" begincolumn="20" endcolumn="1" rule="UseUtilityClass" ruleset="Design" package="mancala" class="Saver" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#useutilityclass" priority="3">
+All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+</violation>
+<violation beginline="8" endline="8" begincolumn="56" endcolumn="70" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="Saver" method="saveObject" variable="filename" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'filename' is not assigned and could be declared final
+</violation>
+<violation beginline="8" endline="8" begincolumn="35" endcolumn="53" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="Saver" method="saveObject" variable="toSave" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'toSave' is not assigned and could be declared final
+</violation>
+<violation beginline="9" endline="9" begincolumn="9" endcolumn="73" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="mancala" class="Saver" method="saveObject" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'currentDirectory' could be declared final
+</violation>
+<violation beginline="11" endline="11" begincolumn="9" endcolumn="36" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="mancala" class="Saver" method="saveObject" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'folderName' could be declared final
+</violation>
+<violation beginline="12" endline="12" begincolumn="9" endcolumn="68" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="mancala" class="Saver" method="saveObject" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'assetsFolderPath' could be declared final
+</violation>
+<violation beginline="12" endline="12" begincolumn="33" endcolumn="68" rule="LawOfDemeter" ruleset="Design" package="mancala" class="Saver" method="saveObject" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="18" endline="25" begincolumn="14" endcolumn="62" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="mancala" class="Saver" method="saveObject" variable="gameFilePath" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'gameFilePath' (lines '18'-'25').
+</violation>
+<violation beginline="18" endline="18" begincolumn="9" endcolumn="62" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="mancala" class="Saver" method="saveObject" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'gameFilePath' could be declared final
+</violation>
+<violation beginline="18" endline="18" begincolumn="29" endcolumn="62" rule="LawOfDemeter" ruleset="Design" package="mancala" class="Saver" method="saveObject" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="20" endline="20" begincolumn="27" endcolumn="28" rule="ShortVariable" ruleset="Code Style" package="mancala" class="Saver" method="saveObject" variable="os" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like os
+</violation>
+<violation beginline="27" endline="27" begincolumn="43" endcolumn="57" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="Saver" method="loadObject" variable="filename" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'filename' is not assigned and could be declared final
+</violation>
+</file>
+<file name="/Users/muhammadali/Desktop/Important/year-2/CIS2430/coursework/Assignments/GP4/src/main/java/mancala/Store.java">
+<violation beginline="5" endline="45" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Code Style" package="mancala" class="Store" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#atleastoneconstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="25" endline="25" begincolumn="27" endcolumn="36" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="Store" method="addStones" variable="amount" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'amount' is not assigned and could be declared final
+</violation>
+<violation beginline="36" endline="36" begincolumn="9" endcolumn="32" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="mancala" class="Store" method="removeStones" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'stones' could be declared final
+</violation>
+</file>
+<file name="/Users/muhammadali/Desktop/Important/year-2/CIS2430/coursework/Assignments/GP4/src/main/java/mancala/UserProfile.java">
+<violation beginline="5" endline="79" begincolumn="8" endcolumn="1" rule="DataClass" ruleset="Design" package="mancala" class="UserProfile" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#dataclass" priority="3">
+The class 'UserProfile' is suspected to be a Data Class (WOC=26.667%, NOPA=0, NOAM=10, WMC=15)
+</violation>
+<violation beginline="14" endline="14" begincolumn="24" endcolumn="34" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="UserProfile" method="UserProfile" variable="name" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'name' is not assigned and could be declared final
+</violation>
+<violation beginline="27" endline="27" begincolumn="25" endcolumn="35" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="UserProfile" method="setName" variable="name" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'name' is not assigned and could be declared final
+</violation>
+<violation beginline="35" endline="35" begincolumn="37" endcolumn="56" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="UserProfile" method="setKalahGamesPlayed" variable="kalahGamesPlayed" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'kalahGamesPlayed' is not assigned and could be declared final
+</violation>
+<violation beginline="51" endline="51" begincolumn="35" endcolumn="52" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="UserProfile" method="setAyoGamesPlayed" variable="ayoGamesPlayed" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ayoGamesPlayed' is not assigned and could be declared final
+</violation>
+<violation beginline="59" endline="59" begincolumn="30" endcolumn="42" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="UserProfile" method="setKalahWins" variable="kalahWins" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'kalahWins' is not assigned and could be declared final
+</violation>
+<violation beginline="75" endline="75" begincolumn="28" endcolumn="38" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="mancala" class="UserProfile" method="setAyoWins" variable="ayoWins" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ayoWins' is not assigned and could be declared final
+</violation>
+</file>
+<file name="/Users/muhammadali/Desktop/Important/year-2/CIS2430/coursework/Assignments/GP4/src/main/java/ui/MancalaGUI.java">
+<violation beginline="10" endline="269" begincolumn="25" endcolumn="1" rule="TooManyMethods" ruleset="Design" package="ui" class="MancalaGUI" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#toomanymethods" priority="3">
+This class has too many methods, consider refactoring it.
+</violation>
+<violation beginline="14" endline="14" begincolumn="20" endcolumn="38" rule="LongVariable" ruleset="Code Style" package="ui" class="MancalaGUI" variable="playerOneStatsLabel" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like playerOneStatsLabel
+</violation>
+<violation beginline="15" endline="15" begincolumn="20" endcolumn="38" rule="LongVariable" ruleset="Code Style" package="ui" class="MancalaGUI" variable="playerTwoStatsLabel" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like playerTwoStatsLabel
+</violation>
+<violation beginline="18" endline="18" begincolumn="23" endcolumn="31" rule="UnusedPrivateField" ruleset="Best Practices" package="ui" class="MancalaGUI" variable="PIT_COUNT" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'PIT_COUNT'.
+</violation>
+<violation beginline="18" endline="18" begincolumn="23" endcolumn="31" rule="FieldNamingConventions" ruleset="Code Style" package="ui" class="MancalaGUI" variable="PIT_COUNT" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The final field name 'PIT_COUNT' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="18" endline="18" begincolumn="23" endcolumn="31" rule="FinalFieldCouldBeStatic" ruleset="Design" package="ui" class="MancalaGUI" variable="PIT_COUNT" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#finalfieldcouldbestatic" priority="3">
+This final field could be made static
+</violation>
+<violation beginline="40" endline="40" begincolumn="9" endcolumn="40" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="ui" class="MancalaGUI" method="createAndShowGUI" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'statsPanel' could be declared final
+</violation>
+<violation beginline="62" endline="62" begincolumn="9" endcolumn="75" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="ui" class="MancalaGUI" method="initializeGamePanel" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'storePlayer2' could be declared final
+</violation>
+<violation beginline="66" endline="66" begincolumn="13" endcolumn="61" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="ui" class="MancalaGUI" method="initializeGamePanel" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'pitButton' could be declared final
+</violation>
+<violation beginline="66" endline="66" begincolumn="45" endcolumn="50" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="ui" class="MancalaGUI" method="initializeGamePanel" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
+The String literal "Pit " appears 4 times in this file; the first occurrence is on line 66
+</violation>
+<violation beginline="67" endline="67" begincolumn="17" endcolumn="33" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="ui" class="MancalaGUI" method="initializeGamePanel" variable="pitNumber" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'pitNumber' (lines '67'-'67').
+</violation>
+<violation beginline="67" endline="83" begincolumn="17" endcolumn="33" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="ui" class="MancalaGUI" method="initializeGamePanel" variable="pitNumber" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'pitNumber' (lines '67'-'83').
+</violation>
+<violation beginline="67" endline="67" begincolumn="13" endcolumn="33" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="ui" class="MancalaGUI" method="initializeGamePanel" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'pitNumber' could be declared final
+</violation>
+<violation beginline="72" endline="72" begincolumn="9" endcolumn="75" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="ui" class="MancalaGUI" method="initializeGamePanel" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'storePlayer1' could be declared final
+</violation>
+<violation beginline="76" endline="76" begincolumn="13" endcolumn="61" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="ui" class="MancalaGUI" method="initializeGamePanel" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'pitButton' could be declared final
+</violation>
+<violation beginline="77" endline="77" begincolumn="13" endcolumn="33" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="ui" class="MancalaGUI" method="initializeGamePanel" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'pitNumber' could be declared final
+</violation>
+<violation beginline="85" endline="85" begincolumn="9" endcolumn="69" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="ui" class="MancalaGUI" method="updateGamePanel" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'storePlayer2Label' could be declared final
+</violation>
+<violation beginline="86" endline="86" begincolumn="9" endcolumn="87" rule="LawOfDemeter" ruleset="Design" package="ui" class="MancalaGUI" method="updateGamePanel" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="88" endline="88" begincolumn="9" endcolumn="69" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="ui" class="MancalaGUI" method="updateGamePanel" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'storePlayer1Label' could be declared final
+</violation>
+<violation beginline="89" endline="89" begincolumn="9" endcolumn="87" rule="LawOfDemeter" ruleset="Design" package="ui" class="MancalaGUI" method="updateGamePanel" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="92" endline="92" begincolumn="13" endcolumn="72" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="ui" class="MancalaGUI" method="updateGamePanel" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'pitButton' could be declared final
+</violation>
+<violation beginline="93" endline="93" begincolumn="13" endcolumn="49" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="ui" class="MancalaGUI" method="updateGamePanel" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'stones' could be declared final
+</violation>
+<violation beginline="94" endline="94" begincolumn="13" endcolumn="63" rule="LawOfDemeter" ruleset="Design" package="ui" class="MancalaGUI" method="updateGamePanel" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="98" endline="98" begincolumn="13" endcolumn="71" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="ui" class="MancalaGUI" method="updateGamePanel" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'pitButton' could be declared final
+</violation>
+<violation beginline="99" endline="99" begincolumn="13" endcolumn="49" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="ui" class="MancalaGUI" method="updateGamePanel" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'stones' could be declared final
+</violation>
+<violation beginline="100" endline="100" begincolumn="13" endcolumn="63" rule="LawOfDemeter" ruleset="Design" package="ui" class="MancalaGUI" method="updateGamePanel" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="108" endline="108" begincolumn="9" endcolumn="41" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="ui" class="MancalaGUI" method="createMenuBar" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'menuBar' could be declared final
+</violation>
+<violation beginline="111" endline="111" begincolumn="9" endcolumn="42" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="ui" class="MancalaGUI" method="createMenuBar" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'fileMenu' could be declared final
+</violation>
+<violation beginline="112" endline="112" begincolumn="9" endcolumn="57" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="ui" class="MancalaGUI" method="createMenuBar" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'newGameItem' could be declared final
+</violation>
+<violation beginline="114" endline="114" begincolumn="9" endcolumn="59" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="ui" class="MancalaGUI" method="createMenuBar" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'saveGameItem' could be declared final
+</violation>
+<violation beginline="116" endline="116" begincolumn="9" endcolumn="59" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="ui" class="MancalaGUI" method="createMenuBar" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'loadGameItem' could be declared final
+</violation>
+<violation beginline="118" endline="118" begincolumn="9" endcolumn="50" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="ui" class="MancalaGUI" method="createMenuBar" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'exitItem' could be declared final
+</violation>
+<violation beginline="119" endline="119" begincolumn="41" endcolumn="51" rule="DoNotTerminateVM" ruleset="Error Prone" package="ui" class="MancalaGUI" method="createMenuBar" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#donotterminatevm" priority="3">
+System.exit() should not be used in J2EE/JEE apps
+</violation>
+<violation beginline="125" endline="125" begincolumn="9" endcolumn="42" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="ui" class="MancalaGUI" method="createMenuBar" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'gameMenu' could be declared final
+</violation>
+<violation beginline="126" endline="126" begincolumn="9" endcolumn="62" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="ui" class="MancalaGUI" method="createMenuBar" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'kalahItem' could be declared final
+</violation>
+<violation beginline="128" endline="128" begincolumn="9" endcolumn="58" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="ui" class="MancalaGUI" method="createMenuBar" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'ayoItem' could be declared final
+</violation>
+<violation beginline="146" endline="146" begincolumn="9" endcolumn="66" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="ui" class="MancalaGUI" method="showEndGameOptions" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'options' could be declared final
+</violation>
+<violation beginline="148" endline="153" begincolumn="9" endcolumn="38" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="ui" class="MancalaGUI" method="showEndGameOptions" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'choice' could be declared final
+</violation>
+<violation beginline="158" endline="160" begincolumn="16" endcolumn="9" rule="EmptyIfStmt" ruleset="Error Prone" package="ui" class="MancalaGUI" method="showEndGameOptions" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#emptyifstmt" priority="3">
+Avoid empty if statements
+</violation>
+<violation beginline="158" endline="160" begincolumn="16" endcolumn="9" rule="EmptyControlStatement" ruleset="Code Style" package="ui" class="MancalaGUI" method="showEndGameOptions" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#emptycontrolstatement" priority="3">
+Empty else statement
+</violation>
+<violation beginline="164" endline="164" begincolumn="27" endcolumn="39" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="ui" class="MancalaGUI" method="makeMove" variable="pitNumber" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'pitNumber' is not assigned and could be declared final
+</violation>
+<violation beginline="172" endline="172" begincolumn="39" endcolumn="71" rule="LawOfDemeter" ruleset="Design" package="ui" class="MancalaGUI" method="makeMove" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="185" endline="185" begincolumn="13" endcolumn="44" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="ui" class="MancalaGUI" method="announceWinner" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'winner' could be declared final
+</violation>
+<violation beginline="186" endline="186" begincolumn="13" endcolumn="92" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="ui" class="MancalaGUI" method="announceWinner" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'message' could be declared final
+</violation>
+<violation beginline="186" endline="186" begincolumn="49" endcolumn="64" rule="LawOfDemeter" ruleset="Design" package="ui" class="MancalaGUI" method="announceWinner" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="196" endline="196" begincolumn="36" endcolumn="49" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="ui" class="MancalaGUI" method="updateStatusLabel" variable="message" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'message' is not assigned and could be declared final
+</violation>
+<violation beginline="201" endline="201" begincolumn="9" endcolumn="49" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="ui" class="MancalaGUI" method="saveGame" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'filename' could be declared final
+</violation>
+<violation beginline="213" endline="213" begincolumn="9" endcolumn="66" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="ui" class="MancalaGUI" method="initializePlayers" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'playerOneProfile' could be declared final
+</violation>
+<violation beginline="214" endline="214" begincolumn="9" endcolumn="66" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="ui" class="MancalaGUI" method="initializePlayers" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'playerTwoProfile' could be declared final
+</violation>
+<violation beginline="215" endline="215" begincolumn="9" endcolumn="55" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="ui" class="MancalaGUI" method="initializePlayers" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'playerOne' could be declared final
+</violation>
+<violation beginline="216" endline="216" begincolumn="9" endcolumn="55" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="ui" class="MancalaGUI" method="initializePlayers" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'playerTwo' could be declared final
+</violation>
+<violation beginline="223" endline="223" begincolumn="28" endcolumn="40" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="ui" class="MancalaGUI" method="onGameEnd" variable="player" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'player' is not assigned and could be declared final
+</violation>
+<violation beginline="230" endline="230" begincolumn="9" endcolumn="48" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="ui" class="MancalaGUI" method="updateGUIPlayerStats" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'players' could be declared final
+</violation>
+<violation beginline="232" endline="232" begincolumn="37" endcolumn="60" rule="LawOfDemeter" ruleset="Design" package="ui" class="MancalaGUI" method="updateGUIPlayerStats" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="232" endline="232" begincolumn="37" endcolumn="60" rule="LawOfDemeter" ruleset="Design" package="ui" class="MancalaGUI" method="updateGUIPlayerStats" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="233" endline="233" begincolumn="15" endcolumn="50" rule="LawOfDemeter" ruleset="Design" package="ui" class="MancalaGUI" method="updateGUIPlayerStats" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="233" endline="233" begincolumn="71" endcolumn="99" rule="LawOfDemeter" ruleset="Design" package="ui" class="MancalaGUI" method="updateGUIPlayerStats" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="233" endline="233" begincolumn="15" endcolumn="50" rule="LawOfDemeter" ruleset="Design" package="ui" class="MancalaGUI" method="updateGUIPlayerStats" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="233" endline="233" begincolumn="71" endcolumn="99" rule="LawOfDemeter" ruleset="Design" package="ui" class="MancalaGUI" method="updateGUIPlayerStats" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="233" endline="233" begincolumn="59" endcolumn="67" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="ui" class="MancalaGUI" method="updateGUIPlayerStats" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
+The String literal " Wins: " appears 4 times in this file; the first occurrence is on line 233
+</violation>
+<violation beginline="234" endline="234" begincolumn="38" endcolumn="71" rule="LawOfDemeter" ruleset="Design" package="ui" class="MancalaGUI" method="updateGUIPlayerStats" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="234" endline="234" begincolumn="92" endcolumn="118" rule="LawOfDemeter" ruleset="Design" package="ui" class="MancalaGUI" method="updateGUIPlayerStats" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="234" endline="234" begincolumn="38" endcolumn="71" rule="LawOfDemeter" ruleset="Design" package="ui" class="MancalaGUI" method="updateGUIPlayerStats" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="234" endline="234" begincolumn="92" endcolumn="118" rule="LawOfDemeter" ruleset="Design" package="ui" class="MancalaGUI" method="updateGUIPlayerStats" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="236" endline="236" begincolumn="37" endcolumn="60" rule="LawOfDemeter" ruleset="Design" package="ui" class="MancalaGUI" method="updateGUIPlayerStats" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="236" endline="236" begincolumn="37" endcolumn="60" rule="LawOfDemeter" ruleset="Design" package="ui" class="MancalaGUI" method="updateGUIPlayerStats" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="237" endline="237" begincolumn="15" endcolumn="50" rule="LawOfDemeter" ruleset="Design" package="ui" class="MancalaGUI" method="updateGUIPlayerStats" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="237" endline="237" begincolumn="71" endcolumn="99" rule="LawOfDemeter" ruleset="Design" package="ui" class="MancalaGUI" method="updateGUIPlayerStats" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="237" endline="237" begincolumn="15" endcolumn="50" rule="LawOfDemeter" ruleset="Design" package="ui" class="MancalaGUI" method="updateGUIPlayerStats" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="237" endline="237" begincolumn="71" endcolumn="99" rule="LawOfDemeter" ruleset="Design" package="ui" class="MancalaGUI" method="updateGUIPlayerStats" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="238" endline="238" begincolumn="38" endcolumn="71" rule="LawOfDemeter" ruleset="Design" package="ui" class="MancalaGUI" method="updateGUIPlayerStats" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="238" endline="238" begincolumn="92" endcolumn="118" rule="LawOfDemeter" ruleset="Design" package="ui" class="MancalaGUI" method="updateGUIPlayerStats" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="238" endline="238" begincolumn="38" endcolumn="71" rule="LawOfDemeter" ruleset="Design" package="ui" class="MancalaGUI" method="updateGUIPlayerStats" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="238" endline="238" begincolumn="92" endcolumn="118" rule="LawOfDemeter" ruleset="Design" package="ui" class="MancalaGUI" method="updateGUIPlayerStats" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (object not created locally)
+</violation>
+<violation beginline="244" endline="244" begincolumn="9" endcolumn="53" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="ui" class="MancalaGUI" method="loadGame" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'fileChooser' could be declared final
+</violation>
+<violation beginline="247" endline="247" begincolumn="55" endcolumn="101" rule="LawOfDemeter" ruleset="Design" package="ui" class="MancalaGUI" method="loadGame" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
+Potential violation of Law of Demeter (method chain calls)
+</violation>
+<violation beginline="256" endline="256" begincolumn="44" endcolumn="44" rule="UnusedFormalParameter" ruleset="Best Practices" package="ui" class="MancalaGUI" method="switchToKalah" variable="e" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#unusedformalparameter" priority="3">
+Avoid unused method parameters such as 'e'.
+</violation>
+<violation beginline="256" endline="256" begincolumn="44" endcolumn="44" rule="ShortVariable" ruleset="Code Style" package="ui" class="MancalaGUI" method="switchToKalah" variable="e" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like e
+</violation>
+<violation beginline="256" endline="256" begincolumn="32" endcolumn="44" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="ui" class="MancalaGUI" method="switchToKalah" variable="e" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'e' is not assigned and could be declared final
+</violation>
+<violation beginline="261" endline="261" begincolumn="42" endcolumn="42" rule="UnusedFormalParameter" ruleset="Best Practices" package="ui" class="MancalaGUI" method="switchToAyo" variable="e" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#unusedformalparameter" priority="3">
+Avoid unused method parameters such as 'e'.
+</violation>
+<violation beginline="261" endline="261" begincolumn="42" endcolumn="42" rule="ShortVariable" ruleset="Code Style" package="ui" class="MancalaGUI" method="switchToAyo" variable="e" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like e
+</violation>
+<violation beginline="261" endline="261" begincolumn="30" endcolumn="42" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="ui" class="MancalaGUI" method="switchToAyo" variable="e" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'e' is not assigned and could be declared final
+</violation>
+<violation beginline="266" endline="266" begincolumn="29" endcolumn="41" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="ui" class="MancalaGUI" method="main" variable="args" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'args' is not assigned and could be declared final
+</violation>
+</file>
+<configerror rule="LoosePackageCoupling" msg="No packages or classes specified"/>
+</pmd>
